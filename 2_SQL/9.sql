@@ -1,0 +1,111 @@
+CREATE TABLE simple(
+a INTEGER,
+b INTEGER,
+c INTEGER
+);
+
+SELECT * FROM simple;
+
+
+/**EVENING SESSION**/
+
+CREATE TABLE countries(
+COUNTRY_ID VARCHAR(3),
+COUNTRY_NAME VARCHAR(45),
+REGION_ID decimal(10,0)
+);
+
+SELECT * FROM countries;
+
+CREATE TABLE dup_countries AS
+(SELECT *
+FROM countries)
+
+SELECT * FROM countries;
+
+CREATE TABLE dup_countries AS
+(SELECT *
+FROM countries)
+WITH NO DATA;
+
+CREATE TABLE IF NOT EXISTS countries(
+COUNTRY_ID VARCHAR(2) NOT NULL,
+COUNTRY_NAME VARCHAR(40) NOT NULL,
+REGION_ID DECIMAL(10,0) NOT NULL);
+
+--write a sql statement to create a table named jobs including columns
+--job_id,job_title,min_salary,max_salary and
+--check whether the max_salary amount excedding the upper limit 25000.
+
+CREATE TABLE jobs(
+job_id SERIAL PRIMARY KEY,
+job_title VARCHAR(20) NOT NULL,
+min_salary decimal(6,0),
+max_salary decimal(6,0)
+	CHECK (max_salary <=25000));
+
+--WRITE A DQL STATEMENT TO CREATE A TABLE NAMED COUNTRIES INCLUDING 
+DROP TABLE countries;
+
+CREATE TABLE countries(
+COUNTRY_ID SERIAL PRIMARY KEY,
+COUNTRY_NAME VARCHAR(20)
+CHECK (country_name IN ('India','Italy','China')),
+REGION_ID decimal(10,0));
+
+/**
+CREATE TABLE countries(
+COUNTRY_ID VARCHAR(3)
+COUNTRY_NAME VARCHAR(20)
+REGION_ID decimal(10,0)
+UNIQUE(COUNTRY_ID);
+);
+**/
+DROP TABLE jobs;
+
+CREATE TABLE jobs(
+job_id SERIAL PRIMARY KEY,
+job_title VARCHAR(20) NOT NULL,
+min_salary decimal(6,0),
+max_salary decimal(6,0)
+	CHECK (max_salary <=25000));
+	
+CREATE TABLE countries(
+COUNTRY_ID VARCHAR(3) UNIQUE PRIMARY KEY,
+COUNTRY_NAME VARCHAR(45) NOT NULL,
+REGION_ID decimal(10,0 NOT NULL)
+);
+
+CREATE TABLE countries(
+COUNTRY_ID SERIAL UNIQUE PRIMARY KEY,
+COUNTRY_NAME VARCHAR(45) NOT NULL,
+REGION_ID decimal(10,0 NOT NULL)
+);
+
+CREATE TABLE countries_n(
+COUNTRY_ID VARCHAR(3) NOT NULL UNIQUE DEFAULT' ',
+COUNTRY_NAME VARCHAR(45) NOT NULL,
+REGION_ID decimal(10,0 NOT NULL)
+PRIMARY KEY(COUNTRY_ID,REGION_ID));
+	
+CREATE TABLE job_history(
+EMPLOYEE_ID decimal(6,0) NOT NULL PRIMARY KEY,
+START_DATE date NOT NULL,
+END_DATE date NOT NULL,
+JOB_ID VARCHAR(10) NOT NULL,
+DEPARTMENT_ID DECIMAL(4,0) DEFAULT NULL,
+FOREIGN KEY (JOB_ID) REFERENCES jobs(job_id));
+
+CREATE TABLE locations(
+location_id VARCHAR(5) NOT NULL ,
+street_address VARCHAR(50) NOT NULL,
+city VARCHAR(20) NOT NULL,
+state_provinance VARCHAR(50) NOT NULL,
+country_id VARCHAR(5) PRIMARY KEY
+);
+
+CREATE TABLE countries(
+)
+)
+
+
