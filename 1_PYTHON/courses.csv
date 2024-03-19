@@ -1,0 +1,14 @@
+,courses,Fee,Duration,Discount
+0,Spark,20000,,
+1,Pyspark,10000,,
+2,Python,5000,,
+3,pandas,2000,,
+0,Unix,25000,,
+1,Hadoop,12000,,
+2,Hyperion,51000,,
+3,Java,22000,,
+0,,,30days,1000.0
+1,,,40days,2000.0
+2,,,35days,3000.0
+3,,,60days,1200.0
+4,,,55days,500.0
