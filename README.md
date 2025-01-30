@@ -58,8 +58,8 @@ This folder focuses on Agglomerative Clustering, a hierarchical clustering metho
 - Understanding Hierarchical Clustering: How agglomerative clustering works by merging similar data points iteratively.
 - Dendrograms: Visualization of hierarchical relationships and choosing the optimal number of clusters.
 - Linkage Methods:
-  --  Single Linkage (minimum distance between clusters).
- -  Complete Linkage (maximum distance between clusters).
+     - Single Linkage (minimum distance between clusters).
+    - Complete Linkage (maximum distance between clusters).
  -  Average Linkage (mean distance between clusters).
  -  Ward’s Method (minimizing variance).
 - Distance Metrics: Euclidean, Manhattan, and Cosine distance calculations.
