@@ -59,18 +59,18 @@ This folder focuses on Agglomerative Clustering, a hierarchical clustering metho
 - Dendrograms: Visualization of hierarchical relationships and choosing the optimal number of clusters.
 - Linkage Methods:
      - Single Linkage (minimum distance between clusters).
-    - Complete Linkage (maximum distance between clusters).
- -  Average Linkage (mean distance between clusters).
- -  Ward’s Method (minimizing variance).
+     - Complete Linkage (maximum distance between clusters).
+     - Average Linkage (mean distance between clusters).
+     - Ward’s Method (minimizing variance).
 - Distance Metrics: Euclidean, Manhattan, and Cosine distance calculations.
 - Comparing Agglomerative Clustering with K-Means: When to use hierarchical methods.
 - Implementation in Python:
- - Using scipy.cluster.hierarchy to create dendrograms.
- - Using sklearn.cluster.AgglomerativeClustering for clustering tasks.
+     - Using scipy.cluster.hierarchy to create dendrograms.
+     - Using sklearn.cluster.AgglomerativeClustering for clustering tasks.
 - Real-World Applications:
- - Customer segmentation.
- - Document classification.
- - Image segmentation.
+     - Customer segmentation.
+     - Document classification.
+     - Image segmentation.
 Includes hands-on exercises and practical case studies to reinforce learning.
 
 
